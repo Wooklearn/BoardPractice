@@ -20,7 +20,7 @@ public class BoardController {
 		this.boardService = boardService;
 	}
 	
-
+ 
 	// 전체 조회
 	@RequestMapping("/list")
 	public String list(Model model) {
