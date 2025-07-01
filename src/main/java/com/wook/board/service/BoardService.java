@@ -8,4 +8,6 @@ public interface BoardService {
 
 	List<BoardDTO> getPostList(); // 게시물 전체조회
 	
+	Integer registPost(BoardDTO boardDTO);
+	
 }

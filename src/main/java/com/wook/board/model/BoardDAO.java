@@ -5,4 +5,6 @@ import java.util.List;
 public interface BoardDAO {
 
 	List<BoardDTO> selectAll();
+	
+	Integer registPost(BoardDTO boardDTO);
 }

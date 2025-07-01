@@ -20,7 +20,13 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public List<BoardDTO> getPostList() {
-		return boardDAO.selectAll();	// dao에서 목록 가져옴
+		return boardDAO.selectAll();
+	}
+	
+	@Override
+	public Integer registPost(BoardDTO boardDTO) {
+		
+		return boardDAO.registPost(boardDTO);
 	}
 
 }

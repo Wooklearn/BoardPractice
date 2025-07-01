@@ -18,4 +18,9 @@ public class BoardDAOImpl implements BoardDAO {
     public List<BoardDTO> selectAll() {
         return sqlSession.selectList(NAMESPACE + ".selectAll");
     }
+    
+    @Override
+    public Integer registPost(BoardDTO boardDTO) {
+    	return sqlSession.insert(NAMESPACE + ".registPost");
+    }
 }
