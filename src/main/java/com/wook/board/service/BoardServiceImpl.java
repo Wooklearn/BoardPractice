@@ -29,4 +29,11 @@ public class BoardServiceImpl implements BoardService {
 		return boardDAO.registPost(boardDTO);
 	}
 
+	@Override
+	public Integer deletePost(int boardNo) {
+		return boardDAO.deletePost(boardNo);
+	}
+	
+	
+
 }

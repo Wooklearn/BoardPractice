@@ -10,6 +10,9 @@
 </head>
 <body>
 	<h1>게시판 만들기</h1>
+	<a href="/board/regist">
+		<button type="button">게시글 등록</button>
+	</a>
 	<table border="1">
 		<tr>
 			<th>게시글 번호</th>
@@ -28,9 +31,11 @@
 				<td><c:out value="${boardMap.content}" /></td>
 				<td><c:out value="${boardMap.regdate}" /></td>
 				<td><c:out value="${boardMap.hit}" /></td>
+				<td><a href="/board/delete?boardNo=<c:out value="${boardMap.boardNo}"/>">삭제</a></td>
 			</tr>
 		</c:forEach>
 
 	</table>
+
 </body>
 </html>

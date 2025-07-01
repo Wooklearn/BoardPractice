@@ -16,10 +16,24 @@
 		<result property="hit" column="HIT" />
 	</resultMap>
 
-
+	<!-- 전체조회 -->
 	<select id="selectAll"
 		resultType="com.wook.board.model.BoardDTO">
 		SELECT BOARD_NO, TITLE, WRITER, CONTENT, REGDATE, HIT
-		FROM BOARD
+		FROM
+		BOARD
 	</select>
+
+	<!-- 게시물 등록 -->
+	<insert id="regist">
+		INSERT INTO board
+		(TITLE, WRITER, CONTENT)
+		VALUES(#{title}, #{writer}, #{content})
+	</insert>
+
+	<!-- 게시물 삭제 -->
+	<delete id="delete">
+		DELETE FROM board
+		WHERE board_no = #{boardNo}
+	</delete>
 </mapper>

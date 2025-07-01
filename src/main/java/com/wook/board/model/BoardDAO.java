@@ -7,4 +7,6 @@ public interface BoardDAO {
 	List<BoardDTO> selectAll();
 	
 	Integer registPost(BoardDTO boardDTO);
+	
+	Integer deletePost(int boardNo);
 }

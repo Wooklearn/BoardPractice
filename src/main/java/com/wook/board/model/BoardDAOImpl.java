@@ -21,6 +21,11 @@ public class BoardDAOImpl implements BoardDAO {
     
     @Override
     public Integer registPost(BoardDTO boardDTO) {
-    	return sqlSession.insert(NAMESPACE + ".registPost");
+    	return sqlSession.insert(NAMESPACE + ".regist", boardDTO);
+    }
+    
+    @Override
+    public Integer deletePost(int boardNo) {
+    	return sqlSession.delete(NAMESPACE + ".delete", boardNo);
     }
 }
