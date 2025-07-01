@@ -19,7 +19,7 @@ public class BoardController {
 	public BoardController(BoardService boardService) { 
 		this.boardService = boardService;
 	}
-	
+	 
  
 	// 전체 조회
 	@RequestMapping("/list")
