@@ -1,0 +1,33 @@
+# IDE-specific files
+.metadata/
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated/
+.sts4-cache/
+bin/
+tmp/
+*.launch
+
+# Build artifacts
+target/
+build/
+
+# Configuration files
+config.properties
+application.properties
+application.yml
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# QueryDSL generated files
+generated/
