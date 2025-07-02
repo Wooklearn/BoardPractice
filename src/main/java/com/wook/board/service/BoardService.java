@@ -11,4 +11,7 @@ public interface BoardService {
 	Integer registPost(BoardDTO boardDTO);	// 게시물 등록
 	
 	Integer deletePost(int boardNo);	// 게시물 삭제
+	
+	BoardDTO detailPost(int boardNo);	// 게시물 상세페이지
+	
 }

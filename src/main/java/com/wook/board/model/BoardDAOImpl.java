@@ -28,4 +28,9 @@ public class BoardDAOImpl implements BoardDAO {
     public Integer deletePost(int boardNo) {
     	return sqlSession.delete(NAMESPACE + ".delete", boardNo);
     }
+    
+    @Override
+    public BoardDTO detailPost(int boardNo) {
+    	return sqlSession.selectOne(NAMESPACE + ".detail", boardNo);
+    }
 }

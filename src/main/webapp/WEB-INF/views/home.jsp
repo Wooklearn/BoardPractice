@@ -7,9 +7,9 @@
 </head>
 <body>
 <h1>
-	Hello world!  
+	Board Practice
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<button onclick="location.href='/board/list'">board</button>
 </body>
 </html>

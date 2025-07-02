@@ -9,4 +9,6 @@ public interface BoardDAO {
 	Integer registPost(BoardDTO boardDTO);
 	
 	Integer deletePost(int boardNo);
+	
+	BoardDTO detailPost(int boardNo);
 }
